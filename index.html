@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PROJECT</title>
+
+
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/searchBox.css">
+  <link rel="stylesheet" href="styles/v8.1Links.css">
+  <link rel="stylesheet" href="styles/others.css">
+  <link rel="stylesheet" href="styles/downloadLinksandMusic.css">
+
+
+  <script src="scripts/header.js"></script>
+  <script src="scripts/searchbox.js"></script>
+  <script src="scripts/others.js"></script>
+  <script src="scripts/downloadLinksandMusic.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header-main">
+      <div class="onlineStatus" id="onlineStatus"></div>
+      <div class="logo"><label>D</label>EMO</div>
+    </div>
+    <div class="header-sub">
+      <div class="header-sub-border">
+        <div class="datetime">Date:&nbsp;<span id="date" class="datetimeSpan"></span></div>
+        <div class="datetime">Time (IST): &nbsp; <span id="timeIST" class="datetimeSpan"></span></div>
+        <div class="datetime">Time (CET):  &nbsp;<span id="timeCET" class="datetimeSpan"></span></div>
+        <div class="datetime">Time (EST): &nbsp; <span id="timeNewYork" class="datetimeSpan"></span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Search Box -->
+  <div class="searchBox">
+    <form action="https://www.google.com/search" class="formDiv" method="GET" target="_blank">
+        <input class="searchBoxInputField" type="text" id="searchInput" name="q">
+        <label for="searchInput" id ="placeholderText" class="placeholderText">Search google</label>
+        <svg class="searchBoxIcon white-icon" id="searchIcon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 128 128">
+          <path d="M 52.349609 14.400391 C 42.624609 14.400391 32.9 18.1 25.5 25.5 C 10.7 40.3 10.7 64.399219 25.5 79.199219 C 32.9 86.599219 42.600391 90.300781 52.400391 90.300781 C 62.200391 90.300781 71.900781 86.599219 79.300781 79.199219 C 94.000781 64.399219 93.999219 40.3 79.199219 25.5 C 71.799219 18.1 62.074609 14.400391 52.349609 14.400391 z M 52.300781 20.300781 C 60.500781 20.300781 68.700391 23.399219 74.900391 29.699219 C 87.400391 42.199219 87.4 62.5 75 75 C 62.5 87.5 42.199219 87.5 29.699219 75 C 17.199219 62.5 17.199219 42.199219 29.699219 29.699219 C 35.899219 23.499219 44.100781 20.300781 52.300781 20.300781 z M 52.300781 26.300781 C 45.400781 26.300781 38.9 29 34 34 C 29.3 38.7 26.700391 44.800391 26.400391 51.400391 C 26.300391 53.100391 27.600781 54.4 29.300781 54.5 L 29.400391 54.5 C 31.000391 54.5 32.300391 53.199609 32.400391 51.599609 C 32.600391 46.499609 34.699219 41.799219 38.199219 38.199219 C 41.999219 34.399219 47.000781 32.300781 52.300781 32.300781 C 54.000781 32.300781 55.300781 31.000781 55.300781 29.300781 C 55.300781 27.600781 54.000781 26.300781 52.300781 26.300781 z M 35 64 A 3 3 0 0 0 32 67 A 3 3 0 0 0 35 70 A 3 3 0 0 0 38 67 A 3 3 0 0 0 35 64 z M 83.363281 80.5 C 82.600781 80.5 81.850781 80.800391 81.300781 81.400391 C 80.100781 82.600391 80.100781 84.499609 81.300781 85.599609 L 83.800781 88.099609 C 83.200781 89.299609 82.900391 90.6 82.900391 92 C 82.900391 94.4 83.8 96.700391 85.5 98.400391 L 98.300781 111 C 100.10078 112.8 102.39922 113.69922 104.69922 113.69922 C 106.99922 113.69922 109.29961 112.79961 111.09961 111.09961 C 114.59961 107.59961 114.59961 101.90039 111.09961 98.400391 L 98.300781 85.599609 C 96.600781 83.899609 94.300391 83 91.900391 83 C 90.500391 83 89.2 83.300391 88 83.900391 L 85.5 81.400391 C 84.9 80.800391 84.125781 80.5 83.363281 80.5 z M 91.900391 88.900391 C 92.700391 88.900391 93.5 89.200781 94 89.800781 L 106.69922 102.5 C 107.89922 103.7 107.89922 105.59922 106.69922 106.69922 C 105.49922 107.89922 103.6 107.89922 102.5 106.69922 L 89.800781 94.099609 C 89.200781 93.499609 88.900391 92.700391 88.900391 91.900391 C 88.900391 91.100391 89.200781 90.300781 89.800781 89.800781 C 90.400781 89.200781 91.100391 88.900391 91.900391 88.900391 z"></path>
+        </svg>
+    </form>
+  </div>
+
+
+  <!-- V8.1 Links -->
+  <div class="v81Links">
+    <div class="v81LinksSub">
+      <label class="labelInsideBorder">V8.1 Application Links</label>
+      <a class="grid-item" href="https://www.google.com" target="_blank">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        PROD</a>
+      <a class="grid-item" href="https://www.google.com" target="_blank">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        DEV</a>
+      <a class="grid-item" href="https://www.google.com" target="_blank">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        HFX</a>
+      <a class="grid-item" href="https://www.google.com" target="_blank">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        UAT</a>
+      <a class="grid-item" href="https://www.google.com" target="_blank">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        TST</a>
+    </div>
+  </div>
+
+
+  <!-- Other Links and Password -->
+
+  <div class="others">
+    <div class="oLinks">
+      <label class="labelInsideBorder1">Links for Daily Use</label>
+      <div class="others-items">
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Data Integration PROD</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Jira</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Devops</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Azure</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">One It</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Sharepoint</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Company Portal</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Timecard</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">Youtube</a>
+        <a class="grid-item1" href="https://www.google.com" target="_blank">ChatGPT</a>
+        <a class="grid-item1" onclick="copyVPN()" target="_blank">Copy VPN</a>
+        <a class="grid-item1" onclick="copyRDCPassword()" target="_blank">Copy Password</a>
+      </div>
+    </div>
+
+    <div class="todo">
+      <label class="labelInsideBorder1">TODO List</label>
+      <input type="text" id="task" placeholder="Add a new task" oninput="validateInput(this)">
+      <button onclick="addTask()">Add</button>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+  <!-- Other Download links and music -->
+  <div class="downloadLinksandMusic">
+    <div class="downloadLinks">
+      <label class="labelInsideBorder">Download Links</label>
+
+      <div class="item">
+        <label>Postman Files</label>
+        <a href="downloads/1.jpg" download> 
+          <svg fill="#ffffff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 29.98" xml:space="preserve" stroke="#ffffff" transform="rotate(0)" stroke-width="0.00029978000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.41969200000000007"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M25.462,19.105v6.848H4.515v-6.848H0.489v8.861c0,1.111,0.9,2.012,2.016,2.012h24.967c1.115,0,2.016-0.9,2.016-2.012 v-8.861H25.462z"></path> <path d="M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723 c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742 c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193 C15.092,18.979,14.62,18.426,14.62,18.426z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+        </a>
+      </div>
+
+      <div class="item1">
+        <label>Setup 1</label>
+        <a href="downloads/1.jpg" download> 
+          <svg fill="#ffffff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 29.98" xml:space="preserve" stroke="#ffffff" transform="rotate(0)" stroke-width="0.00029978000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.41969200000000007"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M25.462,19.105v6.848H4.515v-6.848H0.489v8.861c0,1.111,0.9,2.012,2.016,2.012h24.967c1.115,0,2.016-0.9,2.016-2.012 v-8.861H25.462z"></path> <path d="M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723 c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742 c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193 C15.092,18.979,14.62,18.426,14.62,18.426z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+        </a>
+      </div>
+
+      <div class="item1">
+        <label>Setup 2</label>
+        <a href="downloads/1.jpg" download> 
+          <svg fill="#ffffff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 29.98" xml:space="preserve" stroke="#ffffff" transform="rotate(0)" stroke-width="0.00029978000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.41969200000000007"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M25.462,19.105v6.848H4.515v-6.848H0.489v8.861c0,1.111,0.9,2.012,2.016,2.012h24.967c1.115,0,2.016-0.9,2.016-2.012 v-8.861H25.462z"></path> <path d="M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723 c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742 c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193 C15.092,18.979,14.62,18.426,14.62,18.426z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+        </a>
+      </div>
+
+      <div class="item1">
+        <label>Setup 3</label>
+        <a href="downloads/1.jpg" download> 
+          <svg fill="#ffffff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 29.98" xml:space="preserve" stroke="#ffffff" transform="rotate(0)" stroke-width="0.00029978000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.41969200000000007"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M25.462,19.105v6.848H4.515v-6.848H0.489v8.861c0,1.111,0.9,2.012,2.016,2.012h24.967c1.115,0,2.016-0.9,2.016-2.012 v-8.861H25.462z"></path> <path d="M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723 c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742 c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193 C15.092,18.979,14.62,18.426,14.62,18.426z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+        </a>
+      </div>
+
+      <div class="item1">
+        <label>Setup 4</label>
+        <a href="downloads/1.jpg" download> 
+          <svg fill="#ffffff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.98 29.98" xml:space="preserve" stroke="#ffffff" transform="rotate(0)" stroke-width="0.00029978000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.41969200000000007"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M25.462,19.105v6.848H4.515v-6.848H0.489v8.861c0,1.111,0.9,2.012,2.016,2.012h24.967c1.115,0,2.016-0.9,2.016-2.012 v-8.861H25.462z"></path> <path d="M14.62,18.426l-5.764-6.965c0,0-0.877-0.828,0.074-0.828s3.248,0,3.248,0s0-0.557,0-1.416c0-2.449,0-6.906,0-8.723 c0,0-0.129-0.494,0.615-0.494c0.75,0,4.035,0,4.572,0c0.536,0,0.524,0.416,0.524,0.416c0,1.762,0,6.373,0,8.742 c0,0.768,0,1.266,0,1.266s1.842,0,2.998,0c1.154,0,0.285,0.867,0.285,0.867s-4.904,6.51-5.588,7.193 C15.092,18.979,14.62,18.426,14.62,18.426z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="music">
+      <label class="labelInsideBorder">Music</label>
+
+      <div class="audioPlayer">
+        <audio id="audio-player" controls>
+          <source src="music/In This Corner of the World OST.mp3" type="audio/mpeg">
+        </audio>
+        <div class="cPlaying" id="current-song">Currently Playing: <label id="song-name">In This Corner of the World OST.mp3</label></div>
+      </div>
+
+      <div class="controls">
+        <button id="prev-btn" class="buttonControls">Previous</button>
+        <button id="play-pause-btn" class="buttonControls">Play</button>
+        <button id="next-btn" class="buttonControls">Next</button>
+      </div>
+
+      <select id="song-select" class="song-select">
+        <option value="0">In This Corner of the World OST</option>
+        <option value="1">A silent voice OST</option>
+        <option value="2">Chainsaw Man OST</option>
+        <option value="3">Ezio's Family OST</option>
+        <option value="4">Spider Man Into the Spider Verse</option>
+        <option value="5">Country Roads</option>
+        <option value="6">A plague Tale Innocence OST</option>
+      </select>
+      
+      <div class="sound-bars" id="sound-bars"></div>
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>

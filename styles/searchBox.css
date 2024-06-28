@@ -1,0 +1,64 @@
+.searchBox {
+  /* border: 2px solid red; */
+  /* padding: 20px 10px 20px 10px; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.formDiv {
+  /* border: 1px solid rgb(111, 255, 0); */
+  position: relative;
+}
+
+.searchBoxInputField {
+  background-color: var(--primaryColor);
+  color: var(--primaryTextColor);
+  /* Icon color */
+  width: 98%;
+  height: 40px;
+  padding: 5px 0px 5px 20px;
+  border-radius: 10px;
+  transition: .2s;
+  border-color: black;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgb(254, 254, 254);
+}
+
+.placeholderText {
+  position: absolute;
+  left: 30px;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  pointer-events: none;
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+  color: var(--primaryTextColor);
+}
+
+/* .searchBoxInputField:focus + .placeholderText,
+.searchBoxInputField:not(:focus):valid ~ .placeholderText {
+  top: -13px;
+  color: rgb(0, 0, 0); /* Adjust the color when focused 
+}*/
+
+.empty-focused {
+  top: -13px;
+  color: rgb(255, 254, 254);
+}
+
+
+.searchBoxIcon {
+  position: absolute;
+  right: 1%;
+  /* Adjust the icon position as needed */
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  /* Adjust the icon size as needed */
+  cursor: pointer;
+}
+
+
+.white-icon path {
+  fill: var(--primaryTextColor);
+}

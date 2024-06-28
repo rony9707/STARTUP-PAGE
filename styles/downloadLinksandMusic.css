@@ -1,0 +1,115 @@
+.downloadLinksandMusic {
+  height: 0 auto;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+.downloadLinks {
+  border: 1px solid rgb(207, 171, 171);
+  width: 49%;
+  position: relative;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(254, 254, 254);
+  margin-bottom: 30px;
+}
+
+.item {
+  margin: 30px 0px 0px 10px;
+  color: var(--primaryTextColor);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.item a {
+  margin-right: 300px;
+}
+
+.item1 {
+  margin: 5px 0px 0px 10px;
+  color: var(--primaryTextColor);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.item1 a {
+  margin-right: 300px;
+}
+
+.music {
+  border: 1px solid rgb(173, 173, 173);
+  width: 49%;
+  position: relative;
+  padding-bottom: 10px;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(254, 254, 254);
+}
+
+.audioPlayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cPlaying {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#song-name {
+  font-weight: bold;
+  color: #03d1ff;
+  /* Change the color as needed */
+}
+
+audio {
+  margin: 30px 0px 0px 10px;
+}
+
+
+.controls {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.buttonControls {
+  background-color: rgb(107, 103, 235);
+}
+
+.song-select {
+  margin: 20px 0px 0px 10px;
+  padding-left: 10px;
+  padding: 10px 0px 10px 0px;
+  width: 50%;
+  background-color: var(--ColorButtonBg);
+  color: white;
+}
+
+
+.sound-bars {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+  background-color: var(--primaryColor);
+  padding-left: 10px;
+}
+
+.sound-bar {
+  width: 20px;
+  margin: 0 2px;
+  background-color: #ffffff;
+}
+
+
